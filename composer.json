@@ -2,7 +2,7 @@
   "name": "bmatovu/laravel-query-decorator",
   "description": "Laravel query decorator.",
   "homepage": "https://github.com/mtvbrianking/query-decorator",
-  "type": "project",
+  "type": "library",
   "license": "MIT",
   "keywords": [
     "laravel",
