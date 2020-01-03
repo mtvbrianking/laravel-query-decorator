@@ -1,6 +1,6 @@
 <?php
 
-namespace Bmatovu\HelloWorld\Tests;
+namespace Bmatovu\QueryDecorator\Tests;
 
 class ExampleTest extends TestCase
 {
