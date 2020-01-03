@@ -14,7 +14,7 @@ class QueryDecoratorServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/json-api-paginate.php' => base_path('config/json-api-paginate.php'),
+            __DIR__ . '/../../config/json-api-paginate.php' => base_path('config/json-api-paginate.php'),
         ], 'config');
     }
 
@@ -25,7 +25,7 @@ class QueryDecoratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/json-api-paginate.php', 'json-api-paginate');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/json-api-paginate.php', 'json-api-paginate');
         // $this->app->bind('hello-world', function () {
         //     return new HelloWorld();
         // });
