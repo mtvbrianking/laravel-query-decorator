@@ -21,7 +21,7 @@ class Datatable
         foreach ($params['columns'] as $col) {
             // Select
 
-            if (!isset($col['name'])) {
+            if (! isset($col['name'])) {
                 continue;
             }
 
@@ -29,7 +29,7 @@ class Datatable
 
             // Search
 
-            if (!(bool) $col['searchable']) {
+            if (! (bool) $col['searchable']) {
                 continue;
             }
 
@@ -90,11 +90,11 @@ class Datatable
 
             $col = $params['columns'][$colIdx];
 
-            if (!$col['orderable']) {
+            if (! $col['orderable']) {
                 continue;
             }
 
-            if (!isset($col['name'])) {
+            if (! isset($col['name'])) {
                 continue;
             }
 

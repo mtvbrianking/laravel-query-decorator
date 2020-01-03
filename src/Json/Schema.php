@@ -38,7 +38,7 @@ class Schema
 
         $validator->validate($value, $schema, Constraint::CHECK_MODE_APPLY_DEFAULTS);
 
-        if (!$validator->isValid()) {
+        if (! $validator->isValid()) {
             throw new InvalidJsonException($validator->getErrors());
         }
     }

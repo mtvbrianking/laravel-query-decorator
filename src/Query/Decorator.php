@@ -2,8 +2,8 @@
 
 namespace Bmatovu\QueryDecorator\Query;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 
 class Decorator
 {
@@ -20,13 +20,13 @@ class Decorator
     public static function decorate(Builder $query, array $constraints, array $tableModelMap = [], bool $hasRelations = false): Builder
     {
         foreach ($constraints as $constraint => $options) {
-            $applyConstraint = __NAMESPACE__ . "\Decorator::{$constraint}";
+            $applyConstraint = __NAMESPACE__."\Decorator::{$constraint}";
 
-            if (!is_callable($applyConstraint)) {
+            if (! is_callable($applyConstraint)) {
                 continue;
             }
 
-            if (!$options) {
+            if (! $options) {
                 continue;
             }
 
@@ -195,9 +195,9 @@ class Decorator
     {
         $query->where(function ($query) use ($wheres, $tableModelMap, $hasRelations) {
             foreach ($wheres as $constraint => $options) {
-                $applyConstraint = __NAMESPACE__ . "\Decorator::{$constraint}";
+                $applyConstraint = __NAMESPACE__."\Decorator::{$constraint}";
 
-                if (!is_callable($applyConstraint)) {
+                if (! is_callable($applyConstraint)) {
                     continue;
                 }
 
@@ -341,9 +341,9 @@ class Decorator
         foreach ($groups as $group) {
             $query->where(function ($query) use ($group, $tableModelMap, $hasRelations) {
                 foreach ($group as $constraint => $options) {
-                    $applyConstraint = __NAMESPACE__ . "\Decorator::{$constraint}";
+                    $applyConstraint = __NAMESPACE__."\Decorator::{$constraint}";
 
-                    if (!is_callable($applyConstraint)) {
+                    if (! is_callable($applyConstraint)) {
                         continue;
                     }
 
@@ -368,7 +368,7 @@ class Decorator
     public static function orderBy(Builder $query, array $orders, array $tableModelMap = [], bool $hasRelations = false): Builder
     {
         foreach ($orders as $order) {
-            if (!in_array($order['direction'], ['asc', 'desc'], true)) {
+            if (! in_array($order['direction'], ['asc', 'desc'], true)) {
                 throw new InvalidArgumentException('Order direction must be "asc" or "desc".');
             }
 
