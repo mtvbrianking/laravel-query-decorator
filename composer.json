@@ -1,6 +1,6 @@
 {
-  "name": "bmatovu/query-decorator",
-  "description": "Laravel package boilerplate.",
+  "name": "bmatovu/laravel-query-decorator",
+  "description": "Laravel query decorator.",
   "homepage": "https://github.com/mtvbrianking/query-decorator",
   "type": "project",
   "license": "MIT",
@@ -8,15 +8,22 @@
     "laravel",
     "lumen",
     "package",
-    "development",
-    "starter",
-    "boilerplate"
+    "eloquent",
+    "query",
+    "decorator",
+    "filter"
   ],
   "authors": [
     {
       "name": "Brian Matovu",
       "email": "mtvbrianking@gmail.com",
       "homepage": "http://bmatovu.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Raymond Nambaale",
+      "email": "nambaaler@gmail.com",
+      "homepage": "https://github.com/rnambaale",
       "role": "Developer"
     }
   ],
