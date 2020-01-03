@@ -1,19 +1,13 @@
 <?php
 
 return [
-    /*
-     * The name of the macro that is added to the Eloquent query builder.
-     */
+    // The name of the macro that is added to the Eloquent query builder.
     'method_name' => 'jsonPaginate',
 
-    /*
-     * Here you can override the base url to be used in the link items.
-     */
+    // Here you can override the base url to be used in the link items.
     'base_url' => null,
 
-    /*
-     * The name of the query parameter used for pagination
-     */
+    // The name of the query parameter used for pagination
     'pagination_parameter' => 'filters',
 
     /*

@@ -26,9 +26,9 @@
 
 namespace Bmatovu\QueryDecorator\Providers;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * @see https://github.com/spatie/laravel-json-api-paginate Source
@@ -54,16 +54,16 @@ class JsonApiPaginateServiceProvider extends ServiceProvider
             $sizeParameter = config('json-api-paginate.size_parameter');
             $paginationParameter = config('json-api-paginate.pagination_parameter');
 
-            $size = (int) request()->input($paginationParameter . '.' . $sizeParameter, $defaultSize);
+            $size = (int) request()->input($paginationParameter.'.'.$sizeParameter, $defaultSize);
 
             $size = $size > $maxResults ? $maxResults : $size;
 
             $paginator = $this
-                ->paginate($size, ['*'], $paginationParameter . '.' . $numberParameter)
-                ->setPageName($paginationParameter . '[' . $numberParameter . ']')
-                ->appends(Arr::except(request()->input(), $paginationParameter . '.' . $numberParameter));
+                ->paginate($size, ['*'], $paginationParameter.'.'.$numberParameter)
+                ->setPageName($paginationParameter.'['.$numberParameter.']')
+                ->appends(Arr::except(request()->input(), $paginationParameter.'.'.$numberParameter));
 
-            if (!is_null(config('json-api-paginate.base_url'))) {
+            if (! is_null(config('json-api-paginate.base_url'))) {
                 $paginator->setPath(config('json-api-paginate.base_url'));
             }
 
