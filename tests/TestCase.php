@@ -1,7 +1,8 @@
 <?php
-namespace Bmatovu\HelloWorld\Tests;
 
-use Bmatovu\HelloWorld\HelloWorldServiceProvider;
+namespace Bmatovu\QueryDecorator\Tests;
+
+use Bmatovu\QueryDecorator\Providers\QueryDecoratorServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
@@ -16,7 +17,7 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            HelloWorldServiceProvider::class,
+            QueryDecoratorServiceProvider::class,
         ];
     }
 
