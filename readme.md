@@ -1,17 +1,17 @@
 ## Laravel Package Boilerplate.
 
-[![Build Status](https://travis-ci.org/mtvbrianking/laravel-query-decorator.svg?branch=master)](https://travis-ci.org/mtvbrianking/laravel-query-decorator)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-query-decorator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-query-decorator/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/mtvbrianking/laravel-query-decorator/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-query-decorator/?branch=master)
+[![Build Status](https://travis-ci.org/mtvbrianking/laravel-package-boilerplate.svg?branch=master)](https://travis-ci.org/mtvbrianking/laravel-package-boilerplate)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mtvbrianking/laravel-package-boilerplate/?branch=master)
 [![StyleCI](https://github.styleci.io/repos/230607368/shield?branch=master)](https://github.styleci.io/repos/230607368)
-[![Documentation](https://img.shields.io/badge/Documentation-Blue)](https://mtvbrianking.github.io/laravel-query-decorator)
+[![Documentation](https://img.shields.io/badge/Documentation-Blue)](https://mtvbrianking.github.io/laravel-package-boilerplate)
 
-### [Installation](https://packagist.org/packages/bmatovu/laravel-query-decorator)
+### [Installation](https://packagist.org/packages/bmatovu/laravel-package-boilerplate)
 
 Install via Composer package manager:
 
 ```bash
-composer create-project --prefer-source --remove-vcs bmatovu/laravel-query-decorator hello-world
+composer create-project --prefer-source --remove-vcs bmatovu/laravel-package-boilerplate hello-world
 ```
 
 ### Step #1: Own the package
