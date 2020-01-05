@@ -30,8 +30,8 @@ abstract class TestCase extends Orchestra
      */
     protected function getPackageAliases($app)
     {
-        // return [
-        //     'HelloWorld' => 'Bmatovu\HelloWorld\HelloWorldFacade',
-        // ];
+        return [
+            // ...
+        ];
     }
 }

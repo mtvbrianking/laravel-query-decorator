@@ -36,7 +36,7 @@ if (! function_exists('array_get')) {
 
 if (! function_exists('paginate')) {
     /**
-     * Paginate api api dataset.
+     * Paginate api dataset.
      *
      * @param \Illuminate\Http\Request $request
      * @param object                   $apiResponse

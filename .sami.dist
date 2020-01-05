@@ -27,8 +27,8 @@ $options = [
     'theme' => 'default',
     'versions' => $versions,
     'title' => 'Laravel Package Boilerplate',
-    'build_dir' => __DIR__ . '/docs',
-    'cache_dir' => __DIR__ . '/docs/cache',
+    'build_dir' => __DIR__ . '/build/docs',
+    'cache_dir' => __DIR__ . '/build/docs/cache',
     'remote_repository' => $repo,
     'default_opened_level' => 3,
 ];

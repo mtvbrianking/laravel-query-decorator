@@ -21,6 +21,7 @@ class Schema
      * @param array                 $data
      *
      * @throws \App\Exceptions\InvalidJsonException
+     * @throws \Bmatovu\QueryDecorator\Exceptions\InvalidJsonException
      *
      * @return void
      */

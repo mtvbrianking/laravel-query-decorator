@@ -369,7 +369,7 @@ class Decorator
     {
         foreach ($orders as $order) {
             if (! in_array($order['direction'], ['asc', 'desc'], true)) {
-                throw new InvalidArgumentException('Order direction must be "asc" or "desc".');
+                throw new \InvalidArgumentException('Order direction must be "asc" or "desc".');
             }
 
             $column = $hasRelations ? static::getTableField($order['column'], $tableModelMap) : $order['column'];
@@ -383,7 +383,7 @@ class Decorator
     /**
      * Choose the "offset" value of the query.
      *
-     * Must set limit if offest is chosen.
+     * Must set limit if offset is chosen.
      *
      * @see https://github.com/laravel/framework/issues/5458 #5458
      *

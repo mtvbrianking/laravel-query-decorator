@@ -26,8 +26,5 @@ class QueryDecoratorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../../config/json-api-paginate.php', 'json-api-paginate');
-        // $this->app->bind('hello-world', function () {
-        //     return new HelloWorld();
-        // });
     }
 }

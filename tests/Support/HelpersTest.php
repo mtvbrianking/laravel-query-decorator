@@ -1,6 +1,5 @@
 <?php
 
-// namespace Tests\Unit\Support;
 namespace Bmatovu\QueryDecorator\Tests\Support;
 
 use Bmatovu\QueryDecorator\Tests\TestCase;
